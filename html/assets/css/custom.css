@@ -1,0 +1,165 @@
+@CHARSET "UTF-8";
+
+/**
+    IMPORT CUSTOME FONT
+*/
+@font-face {
+    font-family: 'Roboto';
+    src : url('../fonts/Roboto-Thin.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src : url('../fonts/Roboto-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src : url('../fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src : url('../fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+/* /** */
+    BASIC
+*/
+header {
+    border-top: 3px solid #c71c2e;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+
+/** 
+    TOPBAR - HEADER
+*/
+
+.topbar-header {
+    border-bottom: 2px solid #e4e4e4;
+    padding: 10px 0px;
+}
+
+.topbar-header ul.contact li {
+    padding-right: 20px;
+}
+
+/**
+    NAVBAR - HEADER
+*/
+.topnav-header {
+    background-color: #fff;
+    font-size: 16px;
+/*     border: none; */
+    border-radius: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom:0px;
+    -webkit-box-shadow: 0 27px 28px -27px #000;;
+    -moz-box-shadow: 0 27px 28px -27px #000;
+    box-shadow: 0 27px 28px -27px #000;
+    
+}
+
+.topnav-header .navbar-nav li > a {
+    padding-top: 45px;
+    padding-bottom: 30px;
+    color: #111;
+}
+
+.topnav-header .navbar-nav li > a:hover {
+    background-color: #c71c2e;
+    color: #fff;
+    -webkit-box-shadow: 0 16px 5px -12px #bbb;
+    -moz-box-shadow: 0 16px 5px -12px #bbb;
+    box-shadow: 0 16px 5px -12px #bbb;
+}
+
+.topnav-header .navbar-nav > .active > a,
+.topnav-header .navbar-nav > .active > a:hover,
+.topnav-header .navbar-nav > .active > a:focus {
+    background-color: #c71c2e;
+    color: #fff;
+    -webkit-box-shadow: 0 10px 10px -5px #777;
+    -moz-box-shadow: 0 10px 10px -5px #777;
+    box-shadow: 0 10px 10px -5px #777;
+}
+
+/**
+    SLIDER - HEADER
+*/
+.slider > .carousel {
+    border-bottom: 1px solid #ccc;
+}
+
+.slogan {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.slogan h2 {
+    font-weight: bold;
+}
+
+.slogan p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+/**
+    MAIN
+*/
+.block-title {
+/*     line-height: 0.5; */
+    text-align: center;
+    color: #686765;
+}
+
+.block-title span {
+    display: inline-block;
+    position: relative;
+}
+
+.block-title span:before,
+.block-title span:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    border-bottom: 1px solid #bbb;
+    top: 0;
+    width: 100%; /*@todo: Can xem lai*/
+}
+
+.block-title span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.block-title span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+/**
+    SERVICE - MAIN
+*/
+.service {
+    background-color: #E7EBEF;
+}
+
+.service article {
+    text-align: center;
+}
+
