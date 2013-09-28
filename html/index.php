@@ -59,7 +59,16 @@
                     <ul class="menu-header nav navbar-nav ">
                         <li class="active"><a href="#">Service</a></li>
                         <li><a href="#">Company</a></li>
-                        <li><a href="#">Company</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Sit amet</a></li>
                         <li><a href="#">Aliquam</a></li>
                         <li><a href="#">Metus</a></li>
@@ -78,21 +87,21 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img data-src="holder.js/1140x400/auto/#fff:#7a7a7a/text:First slide"
+                            <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:First slide"
                                 alt="First slide">
                             <div class="container">
                                 <div class="carousel-caption">Caption 1</div>
                             </div>
                         </div>
                         <div class="item">
-                            <img data-src="holder.js/1140x400/auto/#aaa:#6a6a6a/text:Second slide"
+                            <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:Second slide"
                                 alt="Second slide">
                             <div class="container">
                                 <div class="carousel-caption">Caption 2</div>
                             </div>
                         </div>
                         <div class="item">
-                            <img data-src="holder.js/1140x400/auto/#999:#5a5a5a/text:Third slide"
+                            <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:Third slide"
                                 alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">Caption 3</div>
@@ -119,27 +128,59 @@
             <h1 class="block-title"><span>OUR SERVICES</span></h1>
             <div class="row">
                 <article class="col-md-4">
-                    <a href="#"><img src="holder.js/300x400"></a>
+                    <a href="#"><img src="holder.js/300x300/#98dd98:#79b079"></a>
                     <h2>Pellentesque luctus felis</h2>
                     <p>Pellentesque luctus felis augue, scelerisque porta ligula fermentum at. Proin ultricies faucibus sapien at facilisis. In vulputate malesuada est, at accumsan nibh. Donec ipsum tortor.</p>
                 </article>
                 <article class="col-md-4">
-                    <a href="#"><img src="holder.js/300x400"></a>
+                    <a href="#"><img src="holder.js/300x300/#98dd98:#79b079"></a>
                     <h2>Lorem ipsum dolor sit amet</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam metus urna, mattis eu augue non, ultrices lacinia risus.</p>
                 </article>
                 <article class="col-md-4">
-                    <a href="#"><img src="holder.js/300x400"></a>
+                    <a href="#"><img src="holder.js/300x300/#98dd98:#79b079"></a>
                     <h2>Quisque mattis scelerisque</h2>
                     <p>Quisque mattis feugiat scelerisque. Pellentesque in lacus turpis. Morbi vehicula nisi id quam congue rutrum.</p>
                 </article>
             </div>
         </div>
         <div class="latest">
-            <h1 class="block-title">LATEST POSTS</h1>
+            <h1 class="block-title"><span>LATEST POSTS</span></h1>
+            <div class="latest-content" style="margin: 0 auto;width: 1000px;overflow: auto">
+                <?php for ($row = 1; $row <= 2; ++$row):?>
+                    <div style="width:2600px;">
+                        <?php 
+                            $totalCol = 0;
+                            while ($totalCol < 12):
+                                $col = rand(1, 2);
+                                $totalCol += $col;
+                                $height = '200'; 
+                                if ($col == 2) {
+                                    $res = '400x200';
+                                    $width = '400';
+                                } elseif ($col == 1) {
+                                    $res = '200x200';
+                                    $width = $height;
+                                }
+                                
+                        ?>
+                            <article class="" style="max-width: <?php echo $width?>px; display: inline-block; float:left;">
+                                <img src="holder.js/<?php echo $res?>">
+                                <div class="description">
+                                    <p class="">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel adipiscing nisl. 
+                                        Sed ultrices, elit vitae pulvinar tincidunt, nunc odio vestibulum eros, sit amet semper felis magna id diam
+                                    </p>
+                                    <a href="#" class="read-more btn">Read More</a>
+                                </div>
+                            </article>
+                        <?php endwhile;?>
+                    </div>
+                <?php endfor;?>
+            </div>
         </div>
         <div class="popular">
-            <h1 class="block-title">POPULAR POSTS</h1>
+            <h1 class="block-title"><span>POPULAR POSTS</span></h1>
         </div>
         <div class="customers">
             <ul>
@@ -151,7 +192,7 @@
             </ul>
         </div>
         <div class="contact-info">
-            <h1 class="block-title">Contact Us</h1>
+            <h1 class="block-title"><span>Contact Us</span></h1>
             <div class="contact">
                 <a class="logo"><img src="holder.js/300x100"></a>
                 <ul>
