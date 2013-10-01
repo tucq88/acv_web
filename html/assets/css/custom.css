@@ -323,7 +323,7 @@ article .description .read-more {
 /**
     FOOTER
 */
-/* footer { */
+footer {
     background-color: #363A3E;
     color: #ADAEB0;
 }
@@ -338,7 +338,7 @@ article .description .read-more {
     padding-bottom: 20px;
 }
 
-/* ul.social-link { */
+ul.social-link {
     margin: 0 auto;
     width: 250px;
 }
