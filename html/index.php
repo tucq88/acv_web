@@ -56,7 +56,7 @@
                     <a class="logo navbar-brand" href="#"><img src="holder.js/190x80" class="img-responsive"></a>
                 </div>
                 <nav class="navbar-right navbar-collapse collapse" role="navigation">
-                    <ul class="menu-header nav navbar-nav ">
+                    <ul class="menu-header nav navbar-nav">
                         <li class="active"><a href="#">Service</a></li>
                         <li><a href="#">Company</a></li>
                         <li>
@@ -87,21 +87,21 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:First slide"
+                            <img data-src="holder.js/1140x500/auto/#98dd98:#79b079/text:First slide"
                                 alt="First slide">
                             <div class="container">
                                 <div class="carousel-caption">Caption 1</div>
                             </div>
                         </div>
                         <div class="item">
-                            <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:Second slide"
+                            <img data-src="holder.js/1140x500/auto/#98dd98:#79b079/text:Second slide"
                                 alt="Second slide">
                             <div class="container">
                                 <div class="carousel-caption">Caption 2</div>
                             </div>
                         </div>
                         <div class="item">
-                            <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:Third slide"
+                            <img data-src="holder.js/1140x500/auto/#98dd98:#79b079/text:Third slide"
                                 alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">Caption 3</div>
@@ -124,26 +124,41 @@
     </header>
 
     <div class="main">
-        <div class="service main-block container">
-            <h1 class="block-title"><span>OUR SERVICES</span></h1>
-            <div class="row">
-                <article class="col-md-4">
-                    <a href="#"><img src="holder.js/300x300/#98dd98:#79b079"></a>
-                    <h2>Pellentesque luctus felis</h2>
-                    <p>Pellentesque luctus felis augue, scelerisque porta ligula fermentum at. Proin ultricies faucibus sapien at facilisis. In vulputate malesuada est, at accumsan nibh. Donec ipsum tortor.</p>
-                </article>
-                <article class="col-md-4">
-                    <a href="#"><img src="holder.js/300x300/#98dd98:#79b079"></a>
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam metus urna, mattis eu augue non, ultrices lacinia risus.</p>
-                </article>
-                <article class="col-md-4">
-                    <a href="#"><img src="holder.js/300x300/#98dd98:#79b079"></a>
-                    <h2>Quisque mattis scelerisque</h2>
-                    <p>Quisque mattis feugiat scelerisque. Pellentesque in lacus turpis. Morbi vehicula nisi id quam congue rutrum.</p>
-                </article>
+    
+        <!-- Service Block -->
+        <div class="service main-block">
+            <div class="container">
+                <h1 class="block-title"><span>OUR SERVICES</span></h1>
+                <div class="row">
+                    <article class="col-md-4">
+                        <div class="intro">
+                            <img src="holder.js/100%x300/#98dd98:#79b079">
+                            <div class="description"></div>
+                        </div>
+                        <h2>Pellentesque luctus felis</h2>
+                        <p>Pellentesque luctus felis augue, scelerisque porta ligula fermentum at. Proin ultricies faucibus sapien at facilisis. In vulputate malesuada est, at accumsan nibh. Donec ipsum tortor.</p>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="intro">
+                            <a href="#"><img src="holder.js/100%x300/#98dd98:#79b079"></a>
+                            <div class="description"></div>
+                        </div>
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam metus urna, mattis eu augue non, ultrices lacinia risus.</p>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="intro">
+                            <a href="#"><img src="holder.js/100%x300/#98dd98:#79b079"></a>
+                            <div class="description"></div>
+                        </div>
+                        <h2>Quisque mattis scelerisque</h2>
+                        <p>Quisque mattis feugiat scelerisque. Pellentesque in lacus turpis. Morbi vehicula nisi id quam congue rutrum.</p>
+                    </article>
+                </div>
             </div>
         </div>
+        
+        <!-- Latest Block -->
         <div class="latest main-block">
             <h1 class="block-title"><span>LATEST POSTS</span></h1>
             <div class="latest-content container">
@@ -178,19 +193,25 @@
                 <?php endfor;?>
             </div>
         </div>
+        
+        <!-- Popular block -->
         <div class="popular main-block hide">
             <h1 class="block-title"><span>POPULAR POSTS</span></h1>
         </div>
-        <div class="customers main-block container">
-            <div class="customers-content row">
-                <div class="col-md-2"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE"></a></div>
-                <div class="col-md-2"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE"></a></div>
-                <div class="col-md-2"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE"></a></div>
-                <div class="col-md-2"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE"></a></div>
-                <div class="col-md-2"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE"></a></div>
-                <div class="col-md-2"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE"></a></div>
+        
+        <!-- Customer Block -->
+        <div class="customers main-block ">
+            <div class="container">
+                <div class="customers-content row">
+                    <div class="col-md-3"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE"></a></div>
+                    <div class="col-md-3"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE"></a></div>
+                    <div class="col-md-3"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE"></a></div>
+                    <div class="col-md-3"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE"></a></div>
+                </div>
             </div>
         </div>
+        
+        <!-- Contact Block -->
         <div class="contact-info main-block container">
             <h1 class="block-title"><span>Contact Us</span></h1>
             <div class="contact-info-container row">
@@ -219,7 +240,7 @@
                     <img src="holder.js/300x400">
                 </div>
                 <div class="fanpage col-md-4">
-                    <img src="holder.js/300x400" class="pull-right">
+                    <img src="holder.js/300x400">
                 </div>
             </div>
         </div>
@@ -251,11 +272,8 @@
     	$(".latest-content").niceScroll({
     		cursorcolor: "#c71c2e",
             cursorwidth:"16px",
-//             cursorborder:"none",
             cursorborderradius:"0px",
-            /* cursoropacitymin:"1", */
             background:"#f0f3f4",
-            railpadding: {top:0,right:0,left:0,bottom:0}
     	});
         
     	$(".latest-content").mousewheel(function(event, delta, deltaX, deltaY) {
@@ -265,6 +283,25 @@
     		}
     		return false;
 	    });
+
+        var timeout;
+	    $('.dropdown-toggle').parent().hover(function(event) {
+
+	    	// so a neighbor can't open the dropdown
+            if(!$(this).hasClass('open') && !$(this).children('.dropdown-toggle').is(event.target)) {
+                return true;
+            }
+
+            console.log(timeout);
+	    	
+            window.clearTimeout(timeout);
+		    $(this).addClass('open');
+	    }, function() {
+	    	timeout = window.setTimeout(function() {
+	    		$('.dropdown-toggle').parent().removeClass('open');
+	        }, 250);		    
+	    }
+	    );
     });
     </script>
 </body>
