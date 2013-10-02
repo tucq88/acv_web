@@ -1,83 +1,88 @@
 <?php
 	
-	// Add RSS links to <head> section
-	automatic_feed_links();
-	
-	// Load jQuery
-	if ( !is_admin() ) {
-        // register style
-        wp_register_style( 'bootstrap-style', get_bloginfo('template_directory').'/css/bootstrap.min.css');
-        wp_enqueue_style( 'bootstrap-style' );
-        wp_register_style( 'override-style', get_bloginfo('template_directory').'/css/override.css');
-        wp_enqueue_style( 'override-style' );
-        wp_register_style( 'custom-style', get_bloginfo('template_directory').'/css/custom.css' );
-        wp_enqueue_style( 'custom-style' );
+// Add RSS links to <head> section
+automatic_feed_links();
 
-        // register script
-        wp_register_script('html5shiv', get_bloginfo('template_directory').'/js/html5shiv.js');
-        wp_enqueue_script('html5shiv');
-        wp_register_script('respond.min', get_bloginfo('template_directory').'/js/respond.min.js');
-        wp_enqueue_script('respond.min');
+// Load jQuery
+if ( !is_admin() ) {
+    // register style
+    wp_register_style( 'bootstrap-style', get_bloginfo('template_directory').'/css/bootstrap.min.css');
+    wp_enqueue_style( 'bootstrap-style' );
+    wp_register_style( 'override-style', get_bloginfo('template_directory').'/css/override.css');
+    wp_enqueue_style( 'override-style' );
+    wp_register_style( 'custom-style', get_bloginfo('template_directory').'/css/custom.css' );
+    wp_enqueue_style( 'custom-style' );
 
-	}
-	
-	// Clean up the <head>
-	function removeHeadLinks() {
-    	remove_action('wp_head', 'rsd_link');
-    	remove_action('wp_head', 'wlwmanifest_link');
-    }
-    add_action('init', 'removeHeadLinks');
-    remove_action('wp_head', 'wp_generator');
-    
-	// Declare sidebar widget zone
-    if (function_exists('register_sidebar')) {
-    	register_sidebar(array(
-    		'name' => 'Sidebar Widgets',
-    		'id'   => 'sidebar-widgets',
-    		'description'   => 'These are widgets for the sidebar.',
-    		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    		'after_widget'  => '</div>',
-    		'before_title'  => '<h2>',
-    		'after_title'   => '</h2>'
-    	));
-    }
+    // register script
+    wp_register_script('html5shiv', get_bloginfo('template_directory').'/js/html5shiv.js');
+    wp_enqueue_script('html5shiv');
+    wp_register_script('respond.min', get_bloginfo('template_directory').'/js/respond.min.js');
+    wp_enqueue_script('respond.min');
 
-    // create menu support for theme.
-    if (function_exists('register_nav_menus')) {
-        register_nav_menus (
-            array(
-                'main_nav' => 'Main Navigation Menu'
-            )
-        );
-    }
+}
 
-    // create post thumbnail
-    if(function_exists('add_theme_support')) {
-        add_theme_support('post-thumbnails');
-    }
+// Clean up the <head>
+function removeHeadLinks() {
+    remove_action('wp_head', 'rsd_link');
+    remove_action('wp_head', 'wlwmanifest_link');
+}
+add_action('init', 'removeHeadLinks');
+remove_action('wp_head', 'wp_generator');
 
+// Declare sidebar widget zone
+if (function_exists('register_sidebar')) {
+    register_sidebar(array(
+        'name' => 'Sidebar Widgets',
+        'id'   => 'sidebar-widgets',
+        'description'   => 'These are widgets for the sidebar.',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>'
+    ));
+}
+
+// create menu support for theme.
+if (function_exists('register_nav_menus')) {
+    register_nav_menus (
+        array(
+            'main_nav' => 'Main Navigation Menu'
+        )
+    );
+}
+
+// create post thumbnail
+if(function_exists('add_theme_support')) {
+    add_theme_support('post-thumbnails');
+}
 
 /**
-     *  static function
-     *
-     * @param $str
-     * @param $chars
-     * @param $to_space
-     * @param string $replacement
-     * @return string
-     */
-    function truncateString($str, $chars, $to_space, $replacement="...") {
-        if($chars > strlen($str)) return $str;
+ *  static function
+ *
+ * @param $str
+ * @param $chars
+ * @param $to_space
+ * @param string $replacement
+ * @return string
+ */
+function truncateString($str, $chars, $to_space, $replacement="...") {
+    if($chars > strlen($str)) return $str;
 
-        $str = substr($str, 0, $chars);
+    $str = substr($str, 0, $chars);
 
-        $space_pos = strrpos($str, " ");
-        if($to_space && $space_pos >= 0) {
-            $str = substr($str, 0, strrpos($str, " "));
-        }
-
-        return($str . $replacement);
+    $space_pos = strrpos($str, " ");
+    if($to_space && $space_pos >= 0) {
+        $str = substr($str, 0, strrpos($str, " "));
     }
+
+    return($str . $replacement);
+}
+
+// config length excerpt
+function new_excerpt_length($length) {
+    return 20;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
 
 
 /**

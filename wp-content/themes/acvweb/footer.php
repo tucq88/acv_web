@@ -25,11 +25,8 @@
             $(".latest-content").niceScroll({
                 cursorcolor: "#c71c2e",
                 cursorwidth:"16px",
-//             cursorborder:"none",
                 cursorborderradius:"0px",
-                /* cursoropacitymin:"1", */
-                background:"#f0f3f4",
-                railpadding: {top:0,right:0,left:0,bottom:0}
+                background:"#f0f3f4"
             });
 
             $(".latest-content").mousewheel(function(event, delta, deltaX, deltaY) {
@@ -39,6 +36,25 @@
                 }
                 return false;
             });
+
+            var timeout;
+            $('.dropdown-toggle').parent().hover(function(event) {
+
+                    // so a neighbor can't open the dropdown
+                    if(!$(this).hasClass('open') && !$(this).children('.dropdown-toggle').is(event.target)) {
+                        return true;
+                    }
+
+                    console.log(timeout);
+
+                    window.clearTimeout(timeout);
+                    $(this).addClass('open');
+                }, function() {
+                    timeout = window.setTimeout(function() {
+                        $('.dropdown-toggle').parent().removeClass('open');
+                    }, 250);
+                }
+            );
         });
     </script>
 
