@@ -54,18 +54,23 @@
                     <li class="mail"><span class="glyphicon glyphicon-envelope"></span>
                         contact@sample.domain
                     </li>
-                    <li><span class="glyphicon glyphicon-flag"></span>
-                        <select>
-                            <option>Language</option>
-                            <option>English</option>
-                            <option>Japan</option>
-                        </select>
+                    <li>
+                        <span class="glyphicon glyphicon-flag"></span>
+                        <!-- Select language-->
+                        <?php
+                        $instance['type'] = 'dropdown';
+                        $instance['hide-title'] = 1;
+                        $args['before_widget'] = '<div class="acv-language">';
+                        $args['after_widget'] = '</div>';
+                        the_widget( 'qTranslateWidget', $instance, $args);
+                        ?>
+
                     </li>
                 </ul>
 
-                <form class="search navbar-right">
-                    <input type="text" placeholder="Search here ...">
-                </form>
+                <!-- Form search -->
+                <?php get_search_form(); ?>
+
                 <div class="clearfix"></div>
             </div>
             <!-- End Topbar -->
@@ -109,21 +114,21 @@
                             <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:First slide"
                                  alt="First slide">
                             <div class="container">
-                                <div class="carousel-caption">Caption 1</div>
+                                <div class="carousel-caption"><?php _e('Caption 1', 'acvweb'); ?></div>
                             </div>
                         </div>
                         <div class="item">
                             <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:Second slide"
                                  alt="Second slide">
                             <div class="container">
-                                <div class="carousel-caption">Caption 2</div>
+                                <div class="carousel-caption"><?php _e('Caption 2', 'acvweb'); ?></div>
                             </div>
                         </div>
                         <div class="item">
                             <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:Third slide"
                                  alt="Third slide">
                             <div class="container">
-                                <div class="carousel-caption">Caption 3</div>
+                                <div class="carousel-caption"><?php _e('Caption 3', 'acvweb'); ?></div>
                             </div>
                         </div>
                     </div>
@@ -134,8 +139,8 @@
                     </a>
                 </div>
                 <article class="slogan">
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>Pellentesque luctus felis augue, scelerisque porta ligula fermentum at. Proin ultricies faucibus sapien at facilisis</p>
+                    <h2><?php _e('Slogan company Lorem ipsum', 'acvweb'); ?></h2>
+                    <p><?php _e('Pellentesque luctus felis augue, scelerisque porta ligula fermentum at. Proin ultricies faucibus sapien at facilisis', 'acvweb') ?></p>
                 </article>
             </div>
             <!-- End main slide -->

@@ -1,6 +1,6 @@
     <footer>
         <div class="footer-content container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla sapien, consectetur dictum arcu.<br>Praesent justo felis, volutpat in mi vitae</p>
+            <p><?php _e('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla sapien, consectetur dictum arcu.<br>Praesent justo felis, volutpat in mi vitae', 'acvweb'); ?></p>
             <ul class="social-link nav nav-pills">
                 <li><a href="#"><img src="holder.js/16x16"></a></li>
                 <li><a href="#"><img src="holder.js/16x16"></a></li>

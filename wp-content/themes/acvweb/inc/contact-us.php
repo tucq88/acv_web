@@ -1,5 +1,5 @@
 <div class="contact-info main-block container">
-    <h1 class="block-title"><span>Contact Us</span></h1>
+    <h1 class="block-title"><span><?php _e('Contact Us', 'acvweb'); ?></span></h1>
     <div class="contact-info-container row">
         <div class="contact col-md-4">
             <ul>

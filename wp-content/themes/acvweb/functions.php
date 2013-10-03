@@ -186,4 +186,6 @@ class Walker_Nav_Menu_Custom extends Walker_Nav_Menu {
 
 
 }
+
+load_theme_textdomain( 'acvweb', get_template_directory() . '/languages' );
 ?>

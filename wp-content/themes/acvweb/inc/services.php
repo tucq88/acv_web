@@ -1,6 +1,6 @@
 <div class="service main-block">
     <div class="container">
-        <h1 class="block-title"><span>OUR SERVICES</span></h1>
+        <h1 class="block-title"><span><?php _e('OUR SERVICES', 'acvweb'); ?></span></h1>
         <div class="row">
             <?php
             global $pages;

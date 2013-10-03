@@ -1,5 +1,5 @@
 <div class="latest main-block">
-    <h1 class="block-title"><span>LATEST POSTS</span></h1>
+    <h1 class="block-title"><span><?php _e('LATEST POSTS', 'acvweb'); ?></span></h1>
     <div class="latest-content container">
 
         <?php
@@ -40,7 +40,7 @@
                                     <time><?php echo date('Y/m/d', strtotime($post->post_date)) ?></time>
                                     <h4><?php the_title() ?></h4>
                                     <?php the_excerpt(); ?>
-                                    <a href="<?php the_permalink() ?>" class="read-more btn btn-default">Read More</a>
+                                    <a href="<?php the_permalink() ?>" class="read-more btn btn-default"><?php _e('Read More', 'acvweb'); ?></a>
                                 </div>
                             </article>
                 <?php
@@ -54,7 +54,7 @@
                                     <time><?php echo date('Y/m/d', strtotime($post->post_date)) ?></time>
                                     <h4><?php the_title() ?></h4>
                                     <?php the_excerpt(); ?>
-                                    <a href="<?php the_permalink() ?>" class="read-more btn btn-default">Read More</a>
+                                    <a href="<?php the_permalink() ?>" class="read-more btn btn-default"><?php _e('Read More', 'acvweb'); ?></a>
                                 </div>
                             </article>
                 <?php

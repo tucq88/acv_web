@@ -1,5 +1,5 @@
 <div class="popular main-block hide">
-    <h1 class="block-title"><span>POPULAR POSTS</span></h1>
+    <h1 class="block-title"><span><?php _e('POPULAR POSTS', 'acvweb'); ?></span></h1>
 </div>
 <!-- Customer Block -->
 <div class="customers main-block ">
