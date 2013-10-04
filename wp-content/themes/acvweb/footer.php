@@ -22,6 +22,8 @@
     <script src="<?php echo get_bloginfo('template_directory') ?>/js/custom.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+        	$('.acv-language').children('select').addClass('form-control');
+            
             $(".latest-content").niceScroll({
                 cursorcolor: "#c71c2e",
                 cursorwidth:"16px",
@@ -41,11 +43,15 @@
             $('.dropdown-toggle').parent().hover(function(event) {
 
                     // so a neighbor can't open the dropdown
-                    if(!$(this).hasClass('open') && !$(this).children('.dropdown-toggle').is(event.target)) {
+                    if (!$(this).hasClass('open') && !$(this).children('.dropdown-toggle').is(event.target)) {
                         return true;
                     }
 
-                    console.log(timeout);
+
+                    // close others
+                    if ($(this).children('.dropdown-toggle').data()) {
+                        $('.dropdown-toggle').parent().removeClass('open');
+                    }
 
                     window.clearTimeout(timeout);
                     $(this).addClass('open');

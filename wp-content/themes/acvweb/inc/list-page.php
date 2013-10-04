@@ -14,12 +14,11 @@
                                 <div class="intro">
                                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-thumbnail', array('class'=>'img-responsive') ); ?></a>
                                 </div>
-                                <?php if($postView == $post->ID): ?>
-                                    <h2><strong><?php the_title() ?></strong></h2>
+                                <?php if ($postView == $post->ID): ?>
+                                    <h2><?php the_title() ?></h2>
                                 <?php else: ?>
                                     <h2><?php the_title() ?></h2>
                                 <?php endif ?>
-                                <p><?php the_excerpt() ?></p>
                             </article>
                         <?php
                         endforeach;

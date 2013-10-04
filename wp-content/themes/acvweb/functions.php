@@ -6,7 +6,7 @@ automatic_feed_links();
 // Load jQuery
 if ( !is_admin() ) {
     // register style
-    wp_register_style( 'bootstrap-style', get_bloginfo('template_directory').'/css/bootstrap.min.css');
+    wp_register_style( 'bootstrap-style', get_bloginfo('template_directory').'/css/bootstrap.css');
     wp_enqueue_style( 'bootstrap-style' );
     wp_register_style( 'override-style', get_bloginfo('template_directory').'/css/override.css');
     wp_enqueue_style( 'override-style' );

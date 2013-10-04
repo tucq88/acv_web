@@ -12,7 +12,7 @@
                     <article class="col-md-4">
                         <div class="intro">
                             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                            <div class="description"></div>
+                            <div class="description hidden-xs hidden-sm"></div>
                         </div>
                         <h2><?php the_title() ?></h2>
                         <p><?php the_excerpt() ?></p>

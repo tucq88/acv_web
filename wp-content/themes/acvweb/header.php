@@ -44,10 +44,10 @@
 <body <?php body_class(); ?>>
 
     <header>
-        <div class="container">
-            <!-- Start Topbar -->
-            <div class="topbar-header hidden-xs">
-                <ul class="contact nav navbar-nav">
+        <!-- Start Topbar -->
+        <div class="topbar-header">
+            <div class="container">
+                <ul class="contact nav navbar-nav hidden-xs">
                     <li class="phone"><span class="glyphicon glyphicon-earphone"></span>
                         xxx-xxx-xxxx
                     </li>
@@ -64,17 +64,19 @@
                         $args['after_widget'] = '</div>';
                         the_widget( 'qTranslateWidget', $instance, $args);
                         ?>
-
+    
                     </li>
                 </ul>
-
+    
                 <!-- Form search -->
                 <?php get_search_form(); ?>
-
-                <div class="clearfix"></div>
             </div>
-            <!-- End Topbar -->
 
+            <div class="clearfix"></div>
+        </div>
+        <!-- End Topbar -->
+    
+        <div class="container">
             <!-- Start Navbar -->
             <div class="topnav-header navbar navbar-default">
                 <div class="navbar-header">
@@ -83,7 +85,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="logo navbar-brand" href="<?php echo get_option('home'); ?>/"><img src="holder.js/190x80" class="img-responsive"></a>
+                    <a class="logo navbar-brand" href="<?php echo get_option('home'); ?>/">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="top-logo" class="img-responsive">
+                    </a>
                 </div>
 
                 <nav class="navbar-right navbar-collapse collapse" role="navigation">
@@ -100,49 +104,5 @@
 
             </div>
             <!-- End Navbar -->
-
-            <!-- Start main slide -->
-            <div class="slider">
-                <div id="myCarousel" class="carousel slide">
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:First slide"
-                                 alt="First slide">
-                            <div class="container">
-                                <div class="carousel-caption"><?php _e('Caption 1', 'acvweb'); ?></div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:Second slide"
-                                 alt="Second slide">
-                            <div class="container">
-                                <div class="carousel-caption"><?php _e('Caption 2', 'acvweb'); ?></div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img data-src="holder.js/1140x400/auto/#98dd98:#79b079/text:Third slide"
-                                 alt="Third slide">
-                            <div class="container">
-                                <div class="carousel-caption"><?php _e('Caption 3', 'acvweb'); ?></div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span
-                            class="glyphicon glyphicon-chevron-left"></span>
-                    </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span
-                            class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
-                <article class="slogan">
-                    <h2><?php _e('Slogan company Lorem ipsum', 'acvweb'); ?></h2>
-                    <p><?php _e('Pellentesque luctus felis augue, scelerisque porta ligula fermentum at. Proin ultricies faucibus sapien at facilisis', 'acvweb') ?></p>
-                </article>
-            </div>
-            <!-- End main slide -->
         </div>
     </header>
