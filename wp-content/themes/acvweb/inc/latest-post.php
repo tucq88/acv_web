@@ -37,7 +37,7 @@
                             <article class="<?php echo ($col == 2) ? 'two' : 'one';?>">
                                 <?php the_post_thumbnail() ?>
                                 <div class="description">
-                                    <time><?php echo date('Y/m/d', strtotime($post->post_date)) ?></time>
+                                    <time><?php the_time('F jS, Y') ?></time>
                                     <h4><?php the_title() ?></h4>
                                     <?php the_excerpt(); ?>
                                     <a href="<?php the_permalink() ?>" class="read-more btn btn-default"><?php _e('Read More', 'acvweb'); ?></a>
@@ -51,7 +51,7 @@
                             <article class="<?php echo ($col == 2) ? 'two' : 'one';?>">
                                 <?php the_post_thumbnail() ?>
                                 <div class="description">
-                                    <time><?php echo date('Y/m/d', strtotime($post->post_date)) ?></time>
+                                    <time><?php the_time('F jS, Y') ?></time>
                                     <h4><?php the_title() ?></h4>
                                     <?php the_excerpt(); ?>
                                     <a href="<?php the_permalink() ?>" class="read-more btn btn-default"><?php _e('Read More', 'acvweb'); ?></a>

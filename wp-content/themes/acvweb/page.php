@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+<?php include (TEMPLATEPATH . '/inc/list-page.php' ); ?>
+<div class="container">
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
@@ -23,7 +25,7 @@
 		<?php // comments_template(); ?>
 
 		<?php endwhile; endif; ?>
-
-<?php get_sidebar(); ?>
+</div>
+<?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>
