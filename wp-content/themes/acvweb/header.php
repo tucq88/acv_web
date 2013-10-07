@@ -49,10 +49,10 @@
             <div class="container">
                 <ul class="contact nav navbar-nav hidden-xs">
                     <li class="phone"><span class="glyphicon glyphicon-earphone"></span>
-                        xxx-xxx-xxxx
+                        043.734.9747
                     </li>
                     <li class="mail"><span class="glyphicon glyphicon-envelope"></span>
-                        contact@sample.domain
+                        phamhung@atmarkcafe.org
                     </li>
                     <li>
                         <span class="glyphicon glyphicon-flag"></span>
@@ -85,7 +85,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="logo navbar-brand" href="<?php echo get_option('home'); ?>/">
+                    <a class="logo navbar-brand" href="<?php echo qtrans_convertURL(get_bloginfo('home')); //get_option('home'); ?>/">
                         <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="top-logo" class="img-responsive">
                     </a>
                 </div>

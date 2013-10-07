@@ -1,4 +1,4 @@
-<form action="<?php bloginfo('siteurl'); ?>" id="searchform" method="get"
+<form action="<?php echo qtrans_convertURL(get_bloginfo('home')); ?>" id="searchform" method="get"
     class="form-inline navbar-right search" role="form"
 >
     <div class="form-group">
