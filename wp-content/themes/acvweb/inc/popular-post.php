@@ -8,12 +8,15 @@
 <div class="customers main-block ">
     <div class="container">
         <div class="customers-content row">
-            <div class="col-md-2 col-sm-3 col-xs-4"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
-            <div class="col-md-2 col-sm-3 col-xs-4"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
-            <div class="col-md-2 col-sm-3 col-xs-4"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
-            <div class="col-md-2 col-sm-3 hidden-xs"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
-            <div class="col-md-2 hidden-sm hidden-xs"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
-            <div class="col-md-2 hidden-sm hidden-xs"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
+
+            <?php if (function_exists('logo_slider')) { logo_slider(); } else {?>
+                <div class="col-md-2 col-sm-3 col-xs-4"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
+                <div class="col-md-2 col-sm-3 col-xs-4"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
+                <div class="col-md-2 col-sm-3 col-xs-4"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
+                <div class="col-md-2 col-sm-3 hidden-xs"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
+                <div class="col-md-2 hidden-sm hidden-xs"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
+                <div class="col-md-2 hidden-sm hidden-xs"><a href="#"><img src="holder.js/128x128/#5E5E5F:#E7EBEE" class="img-responsive"></a></div>
+            <?php } ?>
         </div>
     </div>
 </div>
