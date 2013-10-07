@@ -22,7 +22,31 @@
             </ul>
         </div>
         <div class="map col-md-4 visible-md visible-lg">
-            <iframe style="width:300px;height:400px;padding:0;border:solid 1px black" src="http://data.mapchannels.com/locationmap/100/map.htm?mx=105.824138&my=21.018239&mz=16&dm=0&mw=250&tc=2&mn=3" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+            <script>
+                var map;
+                function initialize() {
+                  var myLatLng = new google.maps.LatLng(21.018225, 105.824132);
+                  var mapOptions = {
+                    zoom: 16,
+                    center: myLatLng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                  };
+                  map = new google.maps.Map(document.getElementById('map-mini'),
+                      mapOptions);
+        
+                  var marker = new google.maps.Marker({
+                      position: myLatLng,
+                      map: map,
+                      title: 'Atmarkcafe Viet Nam'
+                  });
+                }
+                
+                google.maps.event.addDomListener(window, 'load', initialize);
+            
+            </script>
+            <div id="map-mini" style="width : 300px; height: 400px;">
+            </div>
         </div>
         <div class="fanpage col-md-4 visible-md visible-lg">
             <img src="<?php bloginfo('template_directory')?>/img/fanpage.jpg">
