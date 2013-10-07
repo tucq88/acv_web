@@ -25,6 +25,8 @@
 		<?php // comments_template(); ?>
 
 		<?php endwhile; endif; ?>
+		
+		<?php include (TEMPLATEPATH . '/inc/medium-map.php' ); ?>
 </div>
 <?php //get_sidebar(); ?>
 
