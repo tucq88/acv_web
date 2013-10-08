@@ -11,7 +11,7 @@
             ?>
                     <article class="col-md-4">
                         <div class="intro">
-                            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-thumbnail', array('class'=>'img-responsive img-center') ); ?></a>
                             <div class="description hidden-xs hidden-sm"></div>
                         </div>
                         <h2><?php the_title() ?></h2>
