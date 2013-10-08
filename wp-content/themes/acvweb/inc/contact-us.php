@@ -49,7 +49,15 @@
             </div>
         </div>
         <div class="fanpage col-md-4 visible-md visible-lg">
-            <img src="<?php bloginfo('template_directory')?>/img/fanpage.jpg">
+            <div class="fb-like-box" data-href="https://www.facebook.com/atmarkcafevn" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
         </div>
     </div>
 </div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1&appId=178127238931429";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
