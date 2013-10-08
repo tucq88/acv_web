@@ -1,7 +1,7 @@
         <div id="push"></div>
     </div>
     <footer>
-        <p id="back-top" class="">
+        <p id="back-top" class="hidden-xs hidden-sm">
             <a href="#"><span class="glyphicon glyphicon-chevron-up"></span></a>
         </p>
         
