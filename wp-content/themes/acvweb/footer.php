@@ -122,9 +122,7 @@
       });
     </script>
     <!-- AddThis Smart Layers END -->
-
+    
+    <?php wp_footer(); ?>
 </body>
-
-<?php wp_footer(); ?>
-
 </html>
