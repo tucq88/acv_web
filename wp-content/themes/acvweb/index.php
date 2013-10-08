@@ -33,11 +33,13 @@
  */ ?>
 
 <?php //get_sidebar(); ?>
-
     <div class="main">
         <!-- slide -->
-        <?php include (TEMPLATEPATH . '/inc/slider.php');?>
-        
+        <?php 
+            if (is_front_page() || is_home()) {
+                include (TEMPLATEPATH . '/inc/slider.php');
+            }
+        ?>
         <!-- out service -->
         <?php include (TEMPLATEPATH . '/inc/services.php'); ?>
 
