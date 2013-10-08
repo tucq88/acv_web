@@ -1,10 +1,5 @@
 <?php get_header(); ?>
 <div class="container">
-    <?php
-    global $posts;
-    //            $category = get_the_category_list();
-    echo '<pre>'; var_dump($posts); //die;
-    ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
