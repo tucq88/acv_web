@@ -5,6 +5,7 @@
         var map;
         function initialize() {
           var myLatLng = new google.maps.LatLng(21.018225, 105.824132);
+          var contentString = "<div style='font-weight : bold; text-align : center;'>Atmarkcafe Vietnam</div> Tầng 7, Tòa nhà Anh Minh 36 Hoàng Cầu, Đống Đa, Hà Nội";
           var mapOptions = {
             zoom: 16,
             center: myLatLng,
@@ -18,6 +19,14 @@
               map: map,
               title: 'Atmarkcafe Viet Nam'
           });
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+
+          google.maps.event.addListener(marker, 'click', function() {
+    	    infowindow.open(map,marker);
+    	  });
         }
         
         google.maps.event.addDomListener(window, 'load', initialize);
