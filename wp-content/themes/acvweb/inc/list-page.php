@@ -12,7 +12,7 @@
                             ?>
                             <article class="col-md-4">
                                 <div class="intro">
-                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-thumbnail', array('class'=>'img-responsive') ); ?></a>
+                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-thumbnail', array('class'=>'img-responsive img-center') ); ?></a>
                                 </div>
                                 <?php if ($postView == $post->ID): ?>
                                     <h2><?php the_title() ?></h2>
