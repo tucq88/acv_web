@@ -1,3 +1,5 @@
+        <div id="push"></div>
+    </div>
     <footer>
         <p id="back-top" class="">
             <a href="#"><span class="glyphicon glyphicon-chevron-up"></span></a>
@@ -23,7 +25,7 @@
                     <div class="footer-logo">
                         <p>Copyright © 2006 - 2013. All Right Reserved.</p>
                         <a href="#">
-                            <img src="<?php bloginfo('template_directory')?>/img/logo.png" height="30px">
+                            <img src="<?php bloginfo('template_directory')?>/img/logo.png" class="img-responsive" style="display:inline-block">
                         </a>
                     </div>
                 </div>
