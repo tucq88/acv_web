@@ -31,8 +31,6 @@
         </div>
     </footer>
 
-    <?php wp_footer(); ?>
-
     <!-- JS -->
     <script src="<?php echo get_bloginfo('template_directory') ?>/js/jquery.js"></script>
     <script src="<?php echo get_bloginfo('template_directory') ?>/js/bootstrap.min.js"></script>
@@ -40,6 +38,13 @@
     <script src="<?php echo get_bloginfo('template_directory') ?>/js/jquery.mousewheel.js"></script>
     <script src="<?php echo get_bloginfo('template_directory') ?>/js/jquery.nicescroll.min.js"></script>
     <script src="<?php echo get_bloginfo('template_directory') ?>/js/custom.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="<?php echo get_bloginfo('template_directory') ?>/js/html5shiv.js"></script>
+    <script src="<?php echo get_bloginfo('template_directory') ?>/js/respond.min.js"></script>
+    <![endif]-->
+    
     <script type="text/javascript">
         $(document).ready(function() {
         	$('.acv-language').children('select').addClass('form-control');
@@ -119,5 +124,7 @@
     <!-- AddThis Smart Layers END -->
 
 </body>
+
+<?php wp_footer(); ?>
 
 </html>

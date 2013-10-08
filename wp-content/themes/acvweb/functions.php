@@ -12,13 +12,6 @@ if ( !is_admin() ) {
     wp_enqueue_style( 'override-style' );
     wp_register_style( 'custom-style', get_bloginfo('template_directory').'/css/custom.css' );
     wp_enqueue_style( 'custom-style' );
-
-    // register script
-    wp_register_script('html5shiv', get_bloginfo('template_directory').'/js/html5shiv.js');
-    wp_enqueue_script('html5shiv');
-    wp_register_script('respond.min', get_bloginfo('template_directory').'/js/respond.min.js');
-    wp_enqueue_script('respond.min');
-
 }
 
 // Clean up the <head>
