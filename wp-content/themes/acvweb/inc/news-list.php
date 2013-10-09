@@ -10,7 +10,7 @@
 
             <?php //include (TEMPLATEPATH . '/inc/meta.php' ); ?>
             <?php the_post_thumbnail('post-thumbnail', array('class'=>'img-responsive img-center') ) ?>
-            <div class="content-news">
+            <div class="content-news entry">
                 <?php the_content(); ?>
             </div>
 

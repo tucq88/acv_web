@@ -1,13 +1,14 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-8 col-xs-12 ">
+        <div class="col-sm-9 col-xs-12 ">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                 <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
                     <h2><?php the_title(); ?></h2>
+                    <?php if (function_exists('breadcrumbs')) breadcrumbs(array('class' => 'breadcrumbs-news row'), true); ?>
 
-                    <?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
+                    <?php //include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
                     <div class="entry">
 
@@ -29,7 +30,7 @@
 
 
         </div>
-        <div class="col-sm-4 hidden-xs">
+        <div class="col-sm-3 hidden-xs">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
                 <li><a href="#tab2" data-toggle="tab">Section 2</a></li>

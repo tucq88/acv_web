@@ -516,6 +516,7 @@ footer {
     border-bottom: 2px solid #D7D7D8;
     border-top: 2px solid #D7D7D8;
     line-height: 42px;
+    padding: 0 10px;
     margin-bottom: 20px;
 }
 
@@ -524,7 +525,7 @@ footer {
 }
 
 .title-news a:hover {
-     color: #C61D2E;
+    color: #C61D2E;
     text-decoration: none;
 }
 
@@ -534,9 +535,30 @@ footer {
 }
 
 .content-news {
-    margin: 10px 0;
+    margin: 10px 0 0 0;
 }
 
 .entry {
 	padding : 0 20px 20px 20px;
+}
+
+.breadcrumbs-news {
+    border-bottom: 1px solid #686462;
+    border-top: 1px solid #686462;
+    line-height: 30px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs-news a, .breadcrumbs-news{
+    color: #666562;
+}
+
+.breadcrumbs-news a:hover{
+    color: #C61D2E;
+    text-decoration: none;
+}
+
+span.news-select {
+    color: #C61D2E;
 }
