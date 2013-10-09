@@ -510,4 +510,29 @@ footer {
     }
 }
 
-.img-center{margin: 0 auto;}
+.img-center {margin: 0 auto;}
+
+.title-news {
+    border-bottom: 2px solid #D7D7D8;
+    border-top: 2px solid #D7D7D8;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.title-news a, .title-news {
+    color: #666562;
+}
+
+.title-news a:hover {
+     color: #C61D2E;
+    text-decoration: none;
+}
+
+.title-news span {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.content-news {
+    margin: 10px 0;
+}

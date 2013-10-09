@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-
-	<h2>Error 404 - Page Not Found</h2>
-
-<?php get_sidebar(); ?>
+<div class="container">
+	<h2><?php _e('Error 404 - Page Not Found', 'acvweb'); ?></h2>
+</div>
+<?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>
