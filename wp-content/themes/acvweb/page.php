@@ -6,14 +6,14 @@
 			
 		<div class="post" id="post-<?php the_ID(); ?>">
 
-			<h2><?php the_title(); ?></h2>
+			<h2><?php // the_title(); ?></h2>
 
 			<?php // include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
-			<div class="entry">
-
-				<?php the_content(); ?>
-
+			<div class="row entry">
+                <div class="col-md-12">
+				    <?php the_content(); ?>
+                </div>
 				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 
 			</div>

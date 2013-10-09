@@ -541,3 +541,7 @@ footer {
 .content-news {
     margin: 10px 0;
 }
+
+.entry {
+	padding : 20px;
+}
