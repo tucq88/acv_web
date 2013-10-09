@@ -15,7 +15,8 @@
 				    <?php the_content(); ?>
                 </div>
 				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-
+                
+                <?php include (TEMPLATEPATH . '/inc/medium-map.php' ); ?>
 			</div>
 
 			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
@@ -26,7 +27,6 @@
 
 		<?php endwhile; endif; ?>
 		
-		<?php include (TEMPLATEPATH . '/inc/medium-map.php' ); ?>
 </div>
 <?php //get_sidebar(); ?>
 
