@@ -13,7 +13,7 @@
 </style>
 <?php global $post; ?>
 <?php if($post->post_parent): ?>
-    <div class="service main-block">
+    <div class="service">
         <div class="container">
             <div class="row">
                 <?php if (have_posts()) :
