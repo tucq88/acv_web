@@ -88,12 +88,11 @@
                         <hr>
         				
             		<?php endwhile; ?>
-            
             		<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
             
             	<?php else : ?>
             
-            		<h2>No posts found.</h2>
+            		<h4>No posts found.</h4>
             
             	<?php endif; ?>
             </div>
