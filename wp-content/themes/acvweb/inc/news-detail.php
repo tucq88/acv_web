@@ -62,7 +62,7 @@
                 ?>
                     <div class="post-item list-inline">
                         <div class="pull-left post-img">
-                            <?php the_post_thumbnail('thumbnail', ['class'=>'img-responsive']) ?>
+                            <?php the_post_thumbnail('thumbnail', array('class'=>'img-responsive')) ?>
                         </div>
                         <div class="post-description">
                             <h5><a href="<?php the_permalink() ?>" class=""><?php the_title() ?></a></h5>
