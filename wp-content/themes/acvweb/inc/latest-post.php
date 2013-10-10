@@ -4,7 +4,7 @@
 
         <?php
         $defaults = array(
-            'numberposts' => 10, 'offset' => 0,
+            'numberposts' => 15, 'offset' => 0,
             'category' => 7, 'orderby' => 'post_date',
             'order' => 'DESC', 'include' => '',
             'exclude' => '', 'meta_key' => '',
@@ -15,55 +15,68 @@
         <?php //$latestPost = get_posts('numberposts=10&order=DESC&orderby=post_date'); ?>
         <?php //echo '<pre>'; var_dump($latestPost); die(); ?>
         <?php if($latestPost):
-                $totalWidth = $i = 0;
-                $maxWidth = 3000;
-
+            $totalWidth = $i = 0;
+            $maxWidth = 3800;
             ?>
             <?php foreach($latestPost as $post):
-                setup_postdata($post);
-                $imgdata = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-thumbnail' );
-                $imgwidth = $imgdata[1]; // thumbnail's width
-                $imgheight = $imgdata[2]; // thumbnail's height
-                $totalWidth += $imgwidth+14;
-                if($imgwidth == 712)
-                    $col =2;
-                else
-                    $col =1;
+            setup_postdata($post);
 
-                if ($totalWidth < $maxWidth):
-                    if($i==0): ?>
-                        <div style="width: <?php echo $maxWidth ?>px;">
-                    <?php endif; ?>
-                            <article class="<?php echo ($col == 2) ? 'two' : 'one';?>">
-                                <?php the_post_thumbnail() ?>
-                                <div class="description">
-                                    <time><?php the_time('F jS, Y') ?></time>
-                                    <h4><?php the_title() ?></h4>
-                                    <?php the_excerpt(); ?>
-                                    <a href="<?php the_permalink() ?>" class="read-more btn btn-default"><?php _e('Read More', 'acvweb'); ?></a>
-                                </div>
-                            </article>
-                <?php
-                else:
-                    $totalWidth = $imgwidth+14; ?>
-                        </div>
-                        <div style="width: <?php echo $maxWidth ?>px;">
-                            <article class="<?php echo ($col == 2) ? 'two' : 'one';?>">
-                                <?php the_post_thumbnail() ?>
-                                <div class="description">
-                                    <time><?php the_time('F jS, Y') ?></time>
-                                    <h4><?php the_title() ?></h4>
-                                    <?php the_excerpt(); ?>
-                                    <a href="<?php the_permalink() ?>" class="read-more btn btn-default"><?php _e('Read More', 'acvweb'); ?></a>
-                                </div>
-                            </article>
-                <?php
-                endif;
-                $i++;
-                ?>
+            // $col = rand(1, 2);
+            if($i%3==0){
+                $col = 2;
+            }else{
+                $col = 1;
+            }
+            if($col==1):
+                $imgdata = wp_get_attachment_image_src( get_post_thumbnail_id(), 'news-small-thumb' );
+            else:
+                $imgdata = wp_get_attachment_image_src( get_post_thumbnail_id(), 'news-large-thumb' );
+            endif;
+            $imgwidth = $imgdata[1]; // thumbnail's width
+            $imgheight = $imgdata[2]; // thumbnail's height
+            $totalWidth += $imgwidth+14;
+            /*
+            if($imgwidth == 712)
+                $col =2;
+            else
+                $col =1;
+            */
 
-            <?php endforeach; wp_reset_postdata(); ?>
-                            </div>
+            if ($totalWidth < $maxWidth):
+                if($i==0): ?>
+                    <div style="width: <?php echo $maxWidth ?>px;">
+                <?php endif; ?>
+                <article class="<?php echo ($col == 2) ? 'two' : 'one';?>">
+                    <?php (($col == 1) ? the_post_thumbnail('news-small-thumb') : the_post_thumbnail('news-large-thumb')) ?>
+                    <div class="description">
+                        <time><?php the_time('F jS, Y') ?></time>
+                        <h4><?php the_title() ?></h4>
+                        <p><?php echo (($col == 1) ? truncateString(get_the_excerpt(), 150, 1) : truncateString(get_the_excerpt(), 300, 1) ); ?></p>
+                        <a href="<?php the_permalink() ?>" class="read-more btn btn-default"><?php _e('Read More', 'acvweb'); ?></a>
+                    </div>
+                </article>
+            <?php
+            else:
+                $totalWidth = $imgwidth+14; ?>
+                </div>
+                <div style="width: <?php echo $maxWidth ?>px;">
+                <article class="<?php echo ($col == 2) ? 'two' : 'one';?>">
+                    <?php (($col == 1) ? the_post_thumbnail('news-small-thumb') : the_post_thumbnail('news-large-thumb')) ?>
+                    <?php //the_post_thumbnail() ?>
+                    <div class="description">
+                        <time><?php the_time('F jS, Y') ?></time>
+                        <h4><?php the_title() ?></h4>
+                        <p><?php echo (($col == 1) ? truncateString(get_the_excerpt(), 150, 1) : truncateString(get_the_excerpt(), 300, 1) ); ?></p>
+                        <a href="<?php the_permalink() ?>" class="read-more btn btn-default"><?php _e('Read More', 'acvweb'); ?></a>
+                    </div>
+                </article>
+            <?php
+            endif;
+            $i++;
+            ?>
+
+        <?php endforeach; wp_reset_postdata(); ?>
+            </div>
         <?php endif; ?>
 
     </div>

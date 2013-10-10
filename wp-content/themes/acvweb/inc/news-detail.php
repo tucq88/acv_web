@@ -14,14 +14,16 @@
 
                         <?php the_content(); ?>
 
-                        <?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-
-                        <?php the_tags( 'Tags: ', ', ', ''); ?>
-
                     </div>
 
                     <?php edit_post_link('Edit this entry','','.'); ?>
 
+                </div>
+                <hr class="clear" style="margin: 10px 0;">
+
+                <?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+                <div class="tags">
+                    <?php the_tags( null, ', ', ''); ?>
                 </div>
 
                 <?php comments_template(); ?>

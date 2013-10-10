@@ -9,9 +9,11 @@
             </div>
 
             <?php //include (TEMPLATEPATH . '/inc/meta.php' ); ?>
-            <?php the_post_thumbnail('post-thumbnail', array('class'=>'img-responsive img-center') ) ?>
+            <p>
+            <?php the_post_thumbnail('news-medium-thumb', array('class'=>'img-responsive img-center full-width') ) ?>
+            </p>
             <div class="entry">
-                <?php the_excerpt(500); ?>
+                <?php the_excerpt() ;?>
             </div>
 
         </div>

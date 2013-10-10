@@ -328,4 +328,10 @@ function breadcrumbs($option = array(), $showTime = false) {
     }
 }
 
+if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'news-large-thumb', 712, 240, true ); //(cropped)
+    add_image_size( 'news-small-thumb', 356, 240, true ); //(cropped)
+    add_image_size( 'news-medium-thumb', 800, 400, true ); //(cropped)
+}
+
 ?>

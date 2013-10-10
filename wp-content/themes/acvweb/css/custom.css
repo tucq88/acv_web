@@ -596,7 +596,7 @@ span.news-select {
 }
 
 .top-menu-left .menu-left > li > a:hover{
-    background-color: #c71c2e;
+    background-color: #D15966;
     color: #fff;
     border: none;
 }
@@ -605,8 +605,8 @@ span.news-select {
     padding: 10px 0;
 }
 
-.post-item .post-img {
-    margin-right: 5px;
+.post-description {
+    margin-left: 90px;
 }
 
 .post-description a{
@@ -617,4 +617,8 @@ span.news-select {
 .post-description a:hover{
     color: #666562;
     text-decoration: none;
+}
+
+.tags {
+    margin-bottom: 10px;
 }
