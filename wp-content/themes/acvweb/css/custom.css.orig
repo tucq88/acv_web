@@ -540,11 +540,12 @@ footer {
 }
 
 .content-news {
-    margin: 10px 0;
+    margin: 10px 0 0 0;
 }
 
 .entry {
-	padding : 20px;
+<<<<<<< HEAD
+	padding : 0 20px 20px 20px;
 }
 
 .breadcrumbs-news {
@@ -567,54 +568,7 @@ footer {
 span.news-select {
     color: #C61D2E;
 }
-
-/*=================== Style left in news page ======================*/
-.top-menu-left {
-    padding-top: 20px;
+=======
+	padding : 20px;
 }
-
-.menu-left {
-    border: none;
-    text-transform: uppercase;
-}
-
-/*.top-menu-left .menu-left > li.active,*/
-.top-menu-left .menu-left > li.active > a {
-    background-color: #c71c2e;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-}
-
-/*.top-menu-left .menu-left > li,*/
-.top-menu-left .menu-left > li > a{
-    background-color: #666562;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-    line-height: 2.2;
-}
-
-.top-menu-left .menu-left > li > a:hover{
-    background-color: #c71c2e;
-    color: #fff;
-    border: none;
-}
-
-.content-left{
-    padding: 10px 0;
-}
-
-.post-item .post-img {
-    margin-right: 5px;
-}
-
-.post-description a{
-    color: #c71c2e;
-    text-decoration: none;
-}
-
-.post-description a:hover{
-    color: #666562;
-    text-decoration: none;
-}
+>>>>>>> e61b07fa1bc11da3db019807bfc9551358f46597
