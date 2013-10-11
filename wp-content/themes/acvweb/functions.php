@@ -144,9 +144,17 @@ class Walker_Nav_Menu_Custom extends Walker_Nav_Menu {
 
         $attributes = '';
         foreach ( $atts as $attr => $value ) {
-            if ( ! empty( $value ) ) {
-                $value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
-                $attributes .= ' ' . $attr . '="' . $value . '"';
+            //convert link by language using qtranslate -- edit by hoanx
+            if (function_exists('qtrans_convertURL')) {
+                if ( ! empty( $value ) ) {
+                    $value = ( 'href' === $attr ) ? esc_url( qtrans_convertURL($value) ) : esc_attr( $value );
+                    $attributes .= ' ' . $attr . '="' . $value . '"';
+                }
+            }else{
+                if ( ! empty( $value ) ) {
+                    $value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
+                    $attributes .= ' ' . $attr . '="' . $value . '"';
+                }
             }
         }
 
@@ -333,6 +341,7 @@ if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'news-small-thumb', 356, 240, true ); //(cropped)
     add_image_size( 'news-medium-thumb', 800, 300, true ); //(cropped)
 }
+
 
 /**
  * Debug

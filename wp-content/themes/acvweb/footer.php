@@ -14,12 +14,23 @@
             </ul>
             <div class="row">
                 <div class="col-md-6">
-                    <ul class="main-page nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+<!--                    <ul class="main-page nav">-->
+<!--                        <li><a href="#">About us</a></li>-->
+<!--                        <li><a href="#">Services</a></li>-->
+<!--                        <li><a href="#">Careers</a></li>-->
+<!--                        <li><a href="#">Contact</a></li>-->
+<!--                    </ul>-->
+
+                    <?php wp_nav_menu(
+                        array(
+                            'menu'=>'Menu footer',
+                            'menu_id' => '',
+                            'menu_class' => 'main-page nav ',
+                            'container' => false,
+                            'walker' => new Walker_Nav_Menu_Custom()
+                        )
+                    ); ?>
+
                 </div>
                 <div class="col-md-6">
                     <div class="footer-logo">

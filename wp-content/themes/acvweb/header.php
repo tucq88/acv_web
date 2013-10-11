@@ -93,7 +93,7 @@
                     <nav class="navbar-right navbar-collapse collapse" role="navigation">
                         <?php wp_nav_menu(
                             array(
-                                'menu'=>'Menu',
+                                'menu'=>'Menu Top1',
                                 'menu_id' => '',
                                 'menu_class' => 'menu-header nav navbar-nav ',
                                 'container' => false,
