@@ -331,7 +331,31 @@ function breadcrumbs($option = array(), $showTime = false) {
 if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'news-large-thumb', 712, 240, true ); //(cropped)
     add_image_size( 'news-small-thumb', 356, 240, true ); //(cropped)
-    add_image_size( 'news-medium-thumb', 800, 400, true ); //(cropped)
+    add_image_size( 'news-medium-thumb', 800, 300, true ); //(cropped)
 }
 
+/**
+ * Debug
+ * @author Tucq
+ */
+function debug($var) {
+    echo '<pre style="text-align: left;font-size: 14;">';
+    $trace = debug_backtrace();
+    echo 'Line: '.$trace[0]['line'].'<br>';
+    print_r($var);
+    echo '</pre>';
+}
+
+    /**
+     * Debug then die
+     * @author Tucq
+     */
+function debugdie($var) {
+    echo '<pre style="text-align: left;font-size: 14;">';
+    $trace = debug_backtrace();
+    echo 'Line: '.$trace[0]['line'].'<br>';
+    print_r($var);
+    echo '</pre>';
+    die();
+}
 ?>

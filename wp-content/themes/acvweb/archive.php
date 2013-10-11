@@ -19,7 +19,14 @@
 <!--				<h2>Archive for the &#8216;--><?php //single_cat_title(); ?><!--&#8217; Category</h2>-->
 
 			<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-				<h2>Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h2>
+                <?php $categoryNews = true; ?>
+                <div class="row pagetitle-wrapper">
+                    <div class="col-md-12">
+                        <h3><?php _e('Posts Tagged', 'acvweb'); ?> &nbsp; &#8216;<?php single_tag_title(); ?>&#8217;</h3>
+                    </div>
+                </div>
+                <br>
+<!--				<h2>Posts Tagged &#8216;--><?php //single_tag_title(); ?><!--&#8217;</h2>-->
 
 			<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
 				<h2>Archive for <?php the_time('F jS, Y'); ?></h2>
@@ -46,7 +53,7 @@
                 include (TEMPLATEPATH . '/inc/news-list.php' );
 
             }elseif($categoryRecruit===true){
-                include (TEMPLATEPATH . '/inc/recruit-list.php' );
+                include (TEMPLATEPATH . '/inc/job-list.php' );
 
             }else{
                 while (have_posts()) : the_post(); ?>

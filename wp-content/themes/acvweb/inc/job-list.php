@@ -1,3 +1,8 @@
+<div class="row pagetitle-wrapper">
+    <div class="col-md-12">
+        <h3><?php single_cat_title(); ?></h3>
+    </div>
+</div>
 <div class="row">
     <div class="col-md-12">
     	<?php if (have_posts()) : ?>

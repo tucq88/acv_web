@@ -12,7 +12,7 @@
 }
 </style>
 <?php global $post; ?>
-<?php if($post->post_parent): ?>
+<?php if($post->post_parent && $post->post_parent!=188): ?>
     <div class="service">
         <div class="container">
             <div class="row">

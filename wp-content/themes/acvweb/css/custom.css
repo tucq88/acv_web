@@ -547,6 +547,7 @@ footer {
 	padding : 20px;
 }
 
+/*============== Style breadcrumbs =================*/
 .breadcrumbs-news {
     border-bottom: 1px solid #686462;
     border-top: 1px solid #686462;
@@ -680,3 +681,15 @@ span.news-select {
   border: 1px solid #dddddd;
 }
 
+/* ============================= STYLE NAV Recruit page ===============================*/
+.deactive-nav {
+    opacity : 0.5;
+}
+.deactive-nav:hover {
+    opacity : 0.8;
+}
+.active-nav {
+    color: #ffffff;
+    background-color: #428bca;
+    padding : 10px;
+}

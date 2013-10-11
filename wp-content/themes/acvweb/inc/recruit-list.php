@@ -57,79 +57,48 @@
 }
 </style>
 
-<?php 
-//Testing
-$thisCat = get_the_category();
-$thisCatID = $thisCat[0]->cat_ID;
-debug($thisCa)
-?>
-
-
 <div class="recruit-main-page">
     <div class="recruit-intro">
-        <img data-src="holder.js/1140x250" class="img-responsive recruit-banner">
-        
-        <?php  while (have_posts() && in_category($thisCatID)) :
-                the_post(); 
-        ?>
+<!--        <img data-src="holder.js/1140x250" class="img-responsive recruit-banner">-->
+        <img  width="1140" height="250" src="<?php bloginfo( 'template_url' ) ?>/img/recruit_top_img.jpg" class="img-responsive recruit-banner">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php /*
             <h1 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h1>
-            
+            */ ?>
             <?php the_content(); ?>
-        <?php endwhile; ?>
+        <?php endwhile; endif; ?>
     </div>
+
     <div class="recruit-menu-list">
         <div class="row">
+            <?php
+            // show grid page in recruit
+            $pages = get_pages('child_of='.$post->ID.'&sort_column=order&sort_order=esc');
+            foreach($pages as $post): setup_postdata($post); ?>
+                <div class="recruit-menu col-md-4">
+                    <a href="<?php the_permalink() ?>">
+                        <span class="menu-intro"><?php the_title(); ?></span>
+                        <?php if(has_post_thumbnail()):?>
+                            <?php the_post_thumbnail('news-medium-thumb', array('class'=>'img-responsive') ); ?>
+                        <?php else:?>
+                            <img data-src="holder.js/800x300" class="img-responsive">
+                        <?php endif ?>
+                    </a>
+                </div>
+            <?php endforeach; ?>
+
+            <?php
+            //get category jobs
+            $cateJobs = get_category(10);
+            // Get the URL of this category
+            $category_link = get_category_link( $cateJobs->term_id);
+            ?>
             <div class="recruit-menu col-md-4">
-                <a href="#" data-toggle="modal" data-target="#myModal"> <span class="menu-intro">About
-                        us</span> <img data-src="holder.js/800x300" class="img-responsive">
-                </a>
-            </div>
-            <div class="recruit-menu col-md-4">
-                <a href="#"> <span class="menu-intro">Lorem ipsum dolor</span> <img
-                    data-src="holder.js/800x300" class="img-responsive">
-                </a>
-            </div>
-            <div class="recruit-menu col-md-4">
-                <a href="#"> <span class="menu-intro">Lorem ipsum dolor</span> <img
-                    data-src="holder.js/800x300" class="img-responsive">
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="recruit-menu col-md-4">
-                <a href="#"> <span class="menu-intro">Lorem ipsum dolor</span> <img
-                    data-src="holder.js/800x300" class="img-responsive">
-                </a>
-            </div>
-            <div class="recruit-menu col-md-4">
-                <a href="#"> <span class="menu-intro">Lorem ipsum dolor</span> <img
-                    data-src="holder.js/800x300" class="img-responsive">
-                </a>
-            </div>
-            <div class="recruit-menu col-md-4">
-                <a href="#"> <span class="menu-intro">Lorem ipsum dolor</span> <img
-                    data-src="holder.js/800x300" class="img-responsive">
+                <a href="<?php echo esc_url( $category_link ); ?>">
+                    <span class="menu-intro"><?php echo $cateJobs->name ?></span>
+                    <img width="800" height="300" class="img-responsive wp-post-image" src="<?php bloginfo( 'template_url' ) ?>/img/job-recruit.jpg">
                 </a>
             </div>
         </div>
-    </div>
-</div>
-<!-- Tam thoi khong hien thi -->
-<div class="hide">
-    <div></div>
-    <div>
-    <?php  while (have_posts()) : the_post(); ?>
-        <div <?php post_class() ?>>
-            <h2 id="post-<?php the_ID(); ?>">
-                <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-            </h2>
-    
-            <?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
-    
-            <div class="entry">
-                <?php the_content(); ?>
-            </div>
-        </div>
-    <?php endwhile; ?>
     </div>
 </div>

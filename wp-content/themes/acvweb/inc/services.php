@@ -15,7 +15,7 @@
                             <div class="description hidden-xs hidden-sm"></div>
                         </div>
                         <h2><?php the_title() ?></h2>
-                        <p><?php the_excerpt() ?></p>
+                        <p><?php echo truncateString(get_the_excerpt(), 100, 1) ?></p>
                     </article>
             <?php
                 endforeach;
