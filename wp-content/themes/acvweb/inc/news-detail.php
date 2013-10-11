@@ -81,7 +81,48 @@
 
                 <!-- prelate post -->
                 <div class="tab-pane tab2-left" id="tab2">
-                    <p>Howdy, I'm in Section 2.</p>
+                    <?php 
+                        $tags = wp_get_post_tags($post->ID);
+                        if ($tags) :
+                    ?>
+                         <?php
+                            $arrayTag = array();
+                            foreach($tags as $tag) {
+                                $arrayTag[] = $tag->term_id;
+                            }
+
+                            $defaults = array(
+                                'numberposts' => 8, 'offset' => 0,
+                                'category' => $categoryID, 'orderby' => 'post_date',
+                                'order' => 'DESC', 'include' => '',
+                                'exclude' => '', 'meta_key' => '',
+                                'meta_value' =>'', 'post_type' => 'post', 'post_status' => 'publish',
+                                'suppress_filters' => true,
+                                'tag__in' => $arrayTag,
+                                'post__not_in' => array($post->ID),
+                            );
+                            $latestPost = wp_get_recent_posts($defaults, OBJECT); // get recent posts
+                            if($latestPost):
+                                foreach($latestPost as $post):
+        //                            echo '<pre>'; var_dump($post); die();
+                                    setup_postdata($post);
+                        ?>
+                            <div class="post-item list-inline">
+                                <div class="pull-left post-img">
+                                    <?php the_post_thumbnail('thumbnail', array('class'=>'img-responsive')) ?>
+                                </div>
+                                <div class="post-description">
+                                    <h5><a href="<?php the_permalink() ?>" class=""><?php the_title() ?></a></h5>
+                                    <?php echo truncateString(get_the_excerpt(), 100, 1) ; ?>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        <?php
+                                endforeach;
+                                wp_reset_postdata();
+                            endif;
+                        ?>
+                     <?php endif; ?>
                 </div>
             </div>
         </div>
