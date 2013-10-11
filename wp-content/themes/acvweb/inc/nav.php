@@ -1,15 +1,3 @@
-<style>
-.pagination-custom a, .pagination-custom span {
-  position: relative;
-  float: left;
-  padding: 6px 12px;
-  margin-left: -1px;
-  line-height: 1.428571429;
-  text-decoration: none;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-}
-</style>
 <div class="pagination pagination-custom">
     <?php
         global $wp_query;

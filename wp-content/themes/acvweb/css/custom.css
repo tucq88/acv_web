@@ -622,3 +622,61 @@ span.news-select {
 .tags {
     margin-bottom: 10px;
 }
+
+/* ============================STYLE SEARCH PAGE============================ */
+.pagetitle-wrapper {
+    padding: 0px 10px 10px 10px;
+    background: #ededed;
+}
+.pagetitle-wrapper h3 {
+    color: #01AFEE;
+    font-weight : 300;
+}
+.searchtitle-time {
+    background: #D15966;
+    color : #fff !important;
+    font-size : 13px !important;
+    text-align : center;
+}
+.searchtitle-info {
+    padding : 5px 10px;
+    font-size : 11px;
+    color : #acb0b5;
+    margin-top : 5px;
+}
+.searchtitle-content {
+    padding : 0px 10px;
+}
+.searchtitle-link {
+    font-size : 22px;
+    text-decoration: none !important;
+    font-weight : 300;
+}
+.sidebar-custom {
+    padding : 10px;
+}
+.sidebar-custom ul {
+    padding-left : 0px;
+}
+.sidebar-custom li {
+    list-style : none; 
+    border-bottom : 1px solid #979797;
+    padding : 10px;
+}
+.sidebar-custom a {
+    text-decoration: none !important;
+    color : #979797;
+}
+
+/* =============================STYLE NAV PAGINATION===============================*/
+.pagination-custom a, .pagination-custom span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.428571429;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+
