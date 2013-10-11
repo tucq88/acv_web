@@ -5,7 +5,7 @@
         include (TEMPLATEPATH . '/inc/news-detail.php' );
 
     elseif($categoryID==10):
-        include (TEMPLATEPATH . '/inc/recruit-detail.php' );
+        include (TEMPLATEPATH . '/inc/job-detail.php' );
 
     else:
 ?>
