@@ -1,3 +1,11 @@
+<div class="row pagetitle-wrapper">
+    <div class="col-md-12">
+        <h3>
+            <?php single_cat_title(); ?>
+        </h3>
+    </div>
+</div>
+<br><br>
 <div class="news">
     <?php  while (have_posts()) : the_post(); ?>
 

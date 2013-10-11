@@ -9,7 +9,7 @@
     else:
     ?>
         <?php
-        if(!$post->post_parent || $post->post_parent==188):
+        if($post->post_parent==188):
         ?>
         <div class="row pagetitle-wrapper">
             <div class="col-md-12">
