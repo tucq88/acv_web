@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <?php include (TEMPLATEPATH . '/inc/list-page.php' ); ?>
 <div class="container">
     <?php
@@ -38,5 +39,4 @@
     <?php endif ?>
 </div>
 
-<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

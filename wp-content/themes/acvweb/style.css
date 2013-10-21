@@ -6,4 +6,8 @@ Author: PHP team
 Author URI: http://acvdev.com
 Version: 1.0
 */
-
+@media screen and (max-width: 800px) {
+    .latest-content > div {
+        width: 800px !important;
+    }
+}
