@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: themesacv\n"
-"POT-Creation-Date: 2013-10-02 17:46+0700\n"
-"PO-Revision-Date: 2013-10-03 11:14+0700\n"
+"POT-Creation-Date: 2013-10-22 11:34+0700\n"
+"PO-Revision-Date: 2013-10-22 11:40+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -13,30 +13,110 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: D:\\www\\acv\\acvweb\\wp-content\\themes\\acvweb\n"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/footer.php:3
-msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla "
-"sapien, consectetur dictum arcu.<br>Praesent justo felis, volutpat in mi "
-"vitae"
-msgstr "ja footer Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/category.php:35
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/tag.php:16
+msgid "Nothing found"
+msgstr "Nothing found ja"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/header.php:117
-msgid "Caption 1"
-msgstr "ja pic 1"
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/functions.php:207
+msgid "Home"
+msgstr "Home ja"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/header.php:124
-msgid "Caption 2"
-msgstr "ja pic 2"
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/search.php:7
+msgid "Search Results for "
+msgstr "Search Results for  ja"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/header.php:131
-msgid "Caption 3"
-msgstr "ja pic 3"
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/searchform.php:6
+msgid "Search here..."
+msgstr "ここに検索"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/header.php:142
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/tag.php:7
+msgid "Posts Tagged"
+msgstr "Posts Tagged ja"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:8
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:53
+msgid "Company name :"
+msgstr "会社名 :"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:9
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:54
+msgid "Atmarkcafe Vietnam Company"
+msgstr "アットマークカフェベトナム株式会社"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:12
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:57
+msgid "Director :"
+msgstr "代表取締役 : "
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:13
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:58
+msgid "Pham Hung"
+msgstr "ファン・フン"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:16
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:61
+msgid "Established :"
+msgstr "設立 : "
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:17
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:62
+msgid "Jun, 2012"
+msgstr "２０１２年６月"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:22
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:67
+msgid "R701, Anh Minh Bldg, No.36 Hoang Cau St, Dong Da Dist, Ha Noi"
+msgstr "ハノイ市ドーンダ区ホアンカウ通りNo.36 Anh Minh Bldg７０１号室"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/latest-post.php:2
+msgid "LATEST POSTS"
+msgstr "最新の投稿"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/latest-post.php:55
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/latest-post.php:70
+msgid "Read More"
+msgstr "続きを読む"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:42
+msgid "You can find us here"
+msgstr "You can find us here ja"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:71
+msgid "04-3734-9747"
+msgstr "04-3734-9747"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:76
+msgid "contact@atmarkcafe.org"
+msgstr "contact@atmarkcafe.org"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:82
+msgid "www.atmarkcafe.org"
+msgstr "www.atmarkcafe.org"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/news-detail.php:38
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/news-detail.php:43
+msgid "Latest posts"
+msgstr "Latest posts ja"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/news-detail.php:39
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/news-detail.php:44
+msgid "Prelated news"
+msgstr "Prelated news ja"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/popular-post.php:3
+msgid "POPULAR POSTS"
+msgstr "人気の投稿"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/services.php:3
+msgid "OUR SERVICES"
+msgstr "サービス外"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/slider.php:5
 msgid "Slogan company Lorem ipsum"
 msgstr "ja slogan "
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/header.php:143
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/slider.php:6
 msgid ""
 "Pellentesque luctus felis augue, scelerisque porta ligula fermentum at. "
 "Proin ultricies faucibus sapien at facilisis"
@@ -44,31 +124,23 @@ msgstr ""
 "ja description slogan Pellentesque luctus felis augue, scelerisque porta "
 "ligula fermentum at"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/searchform.php:5
-msgid "Search here..."
-msgstr "ここに検索"
+#~ msgid ""
+#~ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla "
+#~ "sapien, consectetur dictum arcu.<br>Praesent justo felis, volutpat in mi "
+#~ "vitae"
+#~ msgstr "ja footer Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/searchform.php:6
-msgid "Search"
-msgstr "検索"
+#~ msgid "Caption 1"
+#~ msgstr "ja pic 1"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:2
-msgid "Contact Us"
-msgstr "お問い合わせ"
+#~ msgid "Caption 2"
+#~ msgstr "ja pic 2"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/latest-post.php:2
-msgid "LATEST POSTS"
-msgstr "最新の投稿"
+#~ msgid "Caption 3"
+#~ msgstr "ja pic 3"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/latest-post.php:43
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/latest-post.php:57
-msgid "Read More"
-msgstr "続きを読む"
+#~ msgid "Search"
+#~ msgstr "検索"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/popular-post.php:2
-msgid "POPULAR POSTS"
-msgstr "人気の投稿"
-
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/services.php:3
-msgid "OUR SERVICES"
-msgstr "サービス外"
+#~ msgid "Contact Us"
+#~ msgstr "お問い合わせ"

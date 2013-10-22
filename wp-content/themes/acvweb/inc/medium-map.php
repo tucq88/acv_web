@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-lg-11">
                     <div style="font-size: 18px; margin-bottom : 20px;">
-                        <span class="glyphicon glyphicon-map-marker" style="color : #c8162a; margin-right: 10px;"></span><?php _e('You can find us here', 'acvdev') ?>
+                        <span class="glyphicon glyphicon-map-marker" style="color : #c8162a; margin-right: 10px;"></span><?php _e('You can find us here', 'acvweb') ?>
                     </div>
                 </div>
             </div>
@@ -48,17 +48,39 @@
                     <div id="map-canvas" style="height : 400px;"></div>
                 </div>
                 <div class="col-lg-4 col-md-4">
+                    <!--
                     <div style="font-size: 18px; margin-top : 20px;">
-                        <span class="glyphicon glyphicon-map-marker" style="color : #c8162a; margin-right: 10px;"></span><?php _e('Tầng 7, Tòa nhà Anh Minh 36 Hoàng Cầu, Đống Đa, Hà Nội', 'acvdev') ?>
+                        <span class=""><?php _e('Company name :', 'acvweb'); ?></span>
+                        <p><?php _e('Atmarkcafe Vietnam Company', 'acvweb'); ?></p>
                     </div>
                     <div style="font-size: 18px; margin-top : 20px;">
-                        <span class="glyphicon glyphicon-earphone" style="color : #c8162a; margin-right: 10px;"></span><?php _e('043.734.9747', 'acvdev') ?>
+                        <span class=""><?php _e('Director :', 'acvweb'); ?></span>
+                        <p><?php _e('Pham Hung', 'acvweb'); ?></p>
                     </div>
                     <div style="font-size: 18px; margin-top : 20px;">
-                        <span class="glyphicon glyphicon-envelope" style="color : #c8162a; margin-right: 10px;"></span><?php _e('phamhung@atmarkcafe.org', 'acvdev') ?>
+                        <span class=""><?php _e('Established :', 'acvweb'); ?></span>
+                        <p><?php _e('Jun, 2012', 'acvweb'); ?></p>
+                    </div>
+                    -->
+                    <div style="font-size: 18px; margin-top : 20px;">
+                        <span class="glyphicon glyphicon-map-marker" style="color : #c8162a; margin-right: 10px;"></span>
+                        <?php _e('R701, Anh Minh Bldg, No.36 Hoang Cau St, Dong Da Dist, Ha Noi', 'acvweb'); ?>
                     </div>
                     <div style="font-size: 18px; margin-top : 20px;">
-                        <span class="glyphicon glyphicon-globe" style="color : #c8162a; margin-right: 10px;"></span><?php _e('www.atmarkcafevn.org', 'acvdev') ?>
+                        <span class="glyphicon glyphicon-earphone" style="color : #c8162a; margin-right: 10px;"></span>
+                        <?php _e('04-3734-9747', 'acvweb') ?>
+                    </div>
+                    <div style="font-size: 18px; margin-top : 20px;">
+                        <span class="glyphicon glyphicon-envelope" style="color : #c8162a; margin-right: 10px;"></span>
+                        <a href="mailto:contact@atmarkcafe.org">
+                            <?php _e('contact@atmarkcafe.org', 'acvweb') ?>
+                        </a>
+                    </div>
+                    <div style="font-size: 18px; margin-top : 20px;" class="">
+                        <span class="glyphicon glyphicon-globe" style="color : #c8162a; margin-right: 10px;"></span>
+                        <a href="http://www.atmarkcafe.org">
+                            <?php _e('www.atmarkcafe.org', 'acvweb') ?>
+                        </a>
                     </div>
                 </div>
             </div>

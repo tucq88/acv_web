@@ -3,21 +3,35 @@
         <div class="contact col-md-4">
             <ul>
                 <li><a class="logo"><img src="<?php bloginfo('template_directory')?>/img/logo.png"></a></li>
+
+                <li>
+                    <span class="glyphicon glyphicon-registration-mark"><?php //_e('Company name :', 'acvweb'); ?></span>
+                    <p><?php _e('Atmarkcafe Vietnam Company', 'acvweb'); ?></p>
+                </li>
+                <li>
+                    <span class="glyphicon glyphicon-user"><?php //_e('Director :', 'acvweb'); ?></span>
+                    <p><?php _e('Pham Hung', 'acvweb'); ?></p>
+                </li>
+<!--                <li>-->
+<!--                    <span class="glyphicon glyphicon-registration-mark">--><?php ////_e('Established :', 'acvweb'); ?><!--</span>-->
+<!--                    <p>--><?php //_e('Jun, 2012', 'acvweb'); ?><!--</p>-->
+<!--                </li>-->
+
                 <li>
                     <span class="glyphicon glyphicon-map-marker"></span>
-                    <p>702 Anh Minh Building, Hoang Cau Str, Dong Da Dist, Hanoi.</p>
+                    <p><?php _e('R701, Anh Minh Bldg, No.36 Hoang Cau St, Dong Da Dist, Ha Noi', 'acvweb'); ?></p>
                 </li>
                 <li class="phone">
                     <span class="glyphicon glyphicon-phone-alt"></span>
-                    <p>xxx-xxx-xxxx</p>
+                    <p>04-3734-9747</p>
                 </li>
                 <li class="mail">
                     <span class="glyphicon glyphicon-envelope"></span>
-                    <p><a href="mailto:contact@sample.domain">contact@sample.domain</a></p>
+                    <p><a href="mailto:contact@atmarkcafe.org">contact@atmarkcafe.org</a></p>
                 </li>
                 <li class="website">
                     <span class="glyphicon glyphicon-globe"></span>
-                    <p><a href="wwwsampledomain.vn">wwwsampledomain.vn</a></p>
+                    <p><a href="http://www.atmarkcafe.org">www.atmarkcafe.org</a></p>
                 </li>
             </ul>
         </div>

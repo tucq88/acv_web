@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: themesacv\n"
-"POT-Creation-Date: 2013-10-03 11:18+0700\n"
-"PO-Revision-Date: 2013-10-04 16:06+0700\n"
+"POT-Creation-Date: 2013-10-22 11:28+0700\n"
+"PO-Revision-Date: 2013-10-22 11:32+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -13,60 +13,133 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: D:\\www\\acv\\acvweb\\wp-content\\themes\\acvweb\n"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/footer.php:3
-msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla "
-"sapien, consectetur dictum arcu.<br>Praesent justo felis, volutpat in mi "
-"vitae"
-msgstr "Day la footer"
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/category.php:35
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/tag.php:16
+msgid "Nothing found"
+msgstr "Không tìm thấy nội dung"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/header.php:117
-msgid "Caption 1"
-msgstr "anh  slide 1"
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/functions.php:207
+msgid "Home"
+msgstr "Trang chủ"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/header.php:124
-msgid "Caption 2"
-msgstr "anh slide 2"
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/search.php:7
+msgid "Search Results for "
+msgstr "Kết quả tìm kiếm của từ khóa"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/header.php:131
-msgid "Caption 3"
-msgstr "anh slide 3"
-
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/header.php:142
-msgid "Slogan company Lorem ipsum"
-msgstr "day la slogan cua cong ty tao"
-
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/header.php:143
-msgid ""
-"Pellentesque luctus felis augue, scelerisque porta ligula fermentum at. "
-"Proin ultricies faucibus sapien at facilisis"
-msgstr "Day la mota khau hieu cua cong ty tao"
-
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/searchform.php:5
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/searchform.php:6
 msgid "Search here..."
 msgstr "tìm ở đây"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/searchform.php:6
-msgid "Search"
-msgstr "Tìm"
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/tag.php:7
+msgid "Posts Tagged"
+msgstr "Các bài liên quan"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:2
-msgid "Contact Us"
-msgstr "Liên hệ với tao"
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:8
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:53
+msgid "Company name :"
+msgstr "Tên công ty :"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:9
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:54
+msgid "Atmarkcafe Vietnam Company"
+msgstr "Công ty Atmarkcafe Vietnam"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:12
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:57
+msgid "Director :"
+msgstr "Giám đốc : "
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:13
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:58
+msgid "Pham Hung"
+msgstr "Phạm Hùng"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:16
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:61
+msgid "Established :"
+msgstr "Thành lập : "
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:17
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:62
+msgid "Jun, 2012"
+msgstr "Tháng 6 năm 2012"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/contact-us.php:22
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:67
+msgid "R701, Anh Minh Bldg, No.36 Hoang Cau St, Dong Da Dist, Ha Noi"
+msgstr ""
+"Phòng 701, Toà nhà Anh Minh, Số 36, Phố Hoàng Cầu, Quận Đống Đa, Tp. Hà Nội"
 
 #: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/latest-post.php:2
 msgid "LATEST POSTS"
 msgstr "Bai viết gần đây"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/latest-post.php:43
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/latest-post.php:57
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/latest-post.php:55
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/latest-post.php:70
 msgid "Read More"
 msgstr "Doc nhieu hon"
 
-#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/popular-post.php:2
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:42
+msgid "You can find us here"
+msgstr "Bạn có thể tìm chúng tôi ở đây"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:71
+msgid "04-3734-9747"
+msgstr "04-3734-9747"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:76
+msgid "contact@atmarkcafe.org"
+msgstr "contact@atmarkcafe.org"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/medium-map.php:82
+msgid "www.atmarkcafe.org"
+msgstr "www.atmarkcafe.org"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/news-detail.php:38
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/news-detail.php:43
+msgid "Latest posts"
+msgstr "Bài viết gần đây"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/news-detail.php:39
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/news-detail.php:44
+msgid "Prelated news"
+msgstr "Prelated news vi"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/popular-post.php:3
 msgid "POPULAR POSTS"
 msgstr "bai viet noi bat"
 
 #: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/services.php:3
 msgid "OUR SERVICES"
 msgstr "Dịch vụ của tao"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/slider.php:5
+msgid "Slogan company Lorem ipsum"
+msgstr "day la slogan cua cong ty tao"
+
+#: D:\www\acv\acvweb\wp-content\themes\acvweb/inc/slider.php:6
+msgid ""
+"Pellentesque luctus felis augue, scelerisque porta ligula fermentum at. "
+"Proin ultricies faucibus sapien at facilisis"
+msgstr "Day la mota khau hieu cua cong ty tao"
+
+#~ msgid ""
+#~ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla "
+#~ "sapien, consectetur dictum arcu.<br>Praesent justo felis, volutpat in mi "
+#~ "vitae"
+#~ msgstr "Day la footer"
+
+#~ msgid "Caption 1"
+#~ msgstr "anh  slide 1"
+
+#~ msgid "Caption 2"
+#~ msgstr "anh slide 2"
+
+#~ msgid "Caption 3"
+#~ msgstr "anh slide 3"
+
+#~ msgid "Search"
+#~ msgstr "Tìm"
+
+#~ msgid "Contact Us"
+#~ msgstr "Liên hệ với tao"

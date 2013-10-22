@@ -49,10 +49,10 @@
                 <div class="container">
                     <ul class="contact nav navbar-nav hidden-xs">
                         <li class="phone"><span class="glyphicon glyphicon-earphone"></span>
-                            043.734.9747
+                            04-3734-9747
                         </li>
                         <li class="mail"><span class="glyphicon glyphicon-envelope"></span>
-                            phamhung@atmarkcafe.org
+                            contact@atmarkcafe.org
                         </li>
                         <li>
                             <span class="glyphicon glyphicon-flag"></span>
